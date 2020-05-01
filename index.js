@@ -482,7 +482,9 @@ function goTv(collection, callback) {
                                                             let watched = episode.viewCount > 0;
 
                                                             console.log(`\t\t\t${episode.title}: ` +
-                                                                `${watched ? chalk.green("Watched") : chalk.yellow("Unwatched")}`);
+                                                                `${watched ?
+                                                                    chalk.green("Watched") :
+                                                                    chalk.yellow("Unwatched")}`);
 
                                                             plexSeries[series.title]
                                                                 .seasons[season.index][episode.index] =
